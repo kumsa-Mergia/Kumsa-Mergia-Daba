@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #111111;
+}
+body {
+  font-family: "Poppins", serif;
+  background: var(--color-primary);
+  overflow-x: hidden;
+
+}
+
+@layer utilities {
+  .bg-custom-gray {
+    background-color: #2e2e2e;
+  }
+}
+.tech-icon {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.tech-icon.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
