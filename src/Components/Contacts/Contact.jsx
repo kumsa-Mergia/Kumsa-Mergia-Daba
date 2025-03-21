@@ -18,11 +18,11 @@ const Contact = () => {
           {/* Left Side (Get In Touch) */}
           <div className="md:pr-8">
             <h2 className="text-3xl font-semibold mb-4 text-white">
-              Get In Touch
+              📩 Get In Touch
             </h2>
             <p className="text-gray-300 mb-6">
-              Feel free to contact ? Submit your queries here and we will get
-              back to you as soon as possible.
+              Have a question or want to collaborate? Feel free to reach out!
+              I’ll get back to you as soon as possible. Feel free to contact ?
             </p>
             <div className="flex items-center mb-3">
               <svg
@@ -81,7 +81,7 @@ const Contact = () => {
               </svg>
               <span className="text-gray-300">Addis Ababa, Ethiopia</span>
             </div>
-            {/* LinkedIn Icons */}
+            {/* social Icons */}
             <div className="flex space-x-4">
               <div className="flex justify-center md:justify-start gap-6 mt-3">
                 {linkData.map((link) => (
@@ -106,7 +106,10 @@ const Contact = () => {
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">
               Send Message
             </h3>
-            <form>
+            <form
+              action="https://formsubmit.co/kumsamega@gmail.com"
+              method="POST"
+            >
               <div className="mb-4">
                 <label
                   htmlFor="name"
@@ -117,6 +120,8 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  required
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-200"
                   placeholder="Your Name"
                 />
@@ -131,29 +136,31 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  required
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-200"
                   placeholder="Your Email"
                 />
               </div>
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  for="message"
-                  class="block text-sm/6 font-semibold text-gray-900"
+                  htmlFor="message"
+                  className="block text-gray-700 text-sm font-bold mb-2"
                 >
                   Message
                 </label>
-                <div class="mt-2.5">
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows="4"
-                    class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-200"
-                  ></textarea>
-                </div>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  required
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-200"
+                  placeholder="Your Message"
+                ></textarea>
               </div>
               <button
                 type="submit"
-                className="bg-yellow-300 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-yellow-300 hover:bg-yellow-400 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
                 Submit
               </button>

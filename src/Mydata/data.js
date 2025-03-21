@@ -11,24 +11,24 @@ export const HomeData = [
 
 export const linkData = [
   {
-    name: "GitHub",
-    link: "https://github.com/kumsa-Mergia",
-    image: "github",
+    "name": "GitHub",
+    "link": "https://github.com/kumsa-Mergia",
+    "image": "github"
   },
   {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/kumsa-mergia",
-    image: "linkedin",
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/kumsa-mergia",
+    "image": "linkedin"
   },
   {
-    name: "Gmail",
-    link: "#",
-    image: "gmail",
+    "name": "Gmail",
+    "link": "mailto:kumsamega@gmail.com",
+    "image": "gmail"
   },
   {
-    name: "Telegram",
-    link: "#",
-    image: "telegram",
+    "name": "Telegram",
+    "link": "https://t.me/Kumsa_M",
+    "image": "telegram"
   },
 ];
 
