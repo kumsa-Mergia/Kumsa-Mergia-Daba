@@ -1,0 +1,7 @@
+Enter file conten[build]
+  base = "/"
+  publish = "dist"
+  command = "npm ci && npm run build"
+
+[context.production.environment]
+  NODE_ENV = "production"ts here
