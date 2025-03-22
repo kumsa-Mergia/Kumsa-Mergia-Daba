@@ -9,7 +9,5 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  build: {
-    outDir: 'dist' // Vite's default output directory
-  }
+
 })
