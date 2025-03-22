@@ -112,7 +112,7 @@ const About = () => {
           automation. Here’s how I can add value:
         </p>
         {/* card */}
-        <div className="py-5 flex flex-wrap justify-center gap-4">
+        <div className="py-5 flex justify-center gap-4">
           {/* one */}
           <div className="p-3 bg-custom-gray  rounded-lg shadow-md flex flex-col items-center">
             <p className="text-yellow-200">👨‍💻 Frontend Development</p>
@@ -132,38 +132,24 @@ const About = () => {
           </div>
           {/* two */}
           <div className="p-3 bg-custom-gray  rounded-lg shadow-md flex flex-col items-center">
-            <p className="text-yellow-200">👨‍💻 Frontend Development</p>
+            <p className="text-yellow-200">👨‍💻 Infrastructure Solutions</p>
             <ul className="text-gray-300">
               <li>
-                Building responsive, user-friendly websites with React, Next.js,
-                and modern JavaScript frameworks.
+                Expertise in managing and optimizing cloud infrastructure, with
+                hands-on experience in VMware, Nutanix, and IBM Cloud
               </li>
               <li>
-                Creating interactive UI/UX experiences with Tailwind CSS,
-                Material UI, and CSS animations.
+                Streamlining processes through automation with tools like
+                Terraform, Ansible, and Docker to enhance efficiency and
+                scalability.
               </li>
               <li>
-                Optimizing performance for fast and scalable web applications.
+                Implementing robust monitoring solutions using Prometheus and
+                Grafana to ensure your systems are always running smoothly.
               </li>
             </ul>
           </div>
-          {/* three */}
-          <div className="p-3 bg-custom-gray  rounded-lg shadow-md flex flex-col items-center">
-            <p className="text-yellow-200">👨‍💻 Frontend Development</p>
-            <ul className="text-gray-300">
-              <li>
-                Building responsive, user-friendly websites with React, Next.js,
-                and modern JavaScript frameworks.
-              </li>
-              <li>
-                Creating interactive UI/UX experiences with Tailwind CSS,
-                Material UI, and CSS animations.
-              </li>
-              <li>
-                Optimizing performance for fast and scalable web applications.
-              </li>
-            </ul>
-          </div>
+
         </div>
         {/* <div className="">
           <div className="bg-custom-gray  rounded-lg shadow-md flex flex-col items-center">
@@ -185,10 +171,7 @@ const About = () => {
           </div>
 
         </div> */}
-
       </div>
-
-
 
       <hr className=" border-b-1 text-yellow-300" />
       {/* Skill & Expertise */}
