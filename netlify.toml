@@ -1,4 +1,4 @@
-Enter file conten[build]
+[build]
   base = "/"
   publish = "dist"
   command = "npm ci && npm run build"
