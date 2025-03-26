@@ -4,4 +4,4 @@ Enter file conten[build]
   command = "npm ci && npm run build"
 
 [context.production.environment]
-  NODE_ENV = "production"ts here
+  NODE_ENV = "production"
