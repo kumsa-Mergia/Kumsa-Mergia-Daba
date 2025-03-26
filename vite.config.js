@@ -9,8 +9,5 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  build: {
-    outDir: 'dist'
-  }
 
 })
