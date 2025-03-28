@@ -96,7 +96,7 @@ export const technologyData = [
   },
  
   {
-    name: "vmware2",
+    name: "vmware",
     image: "vmware2",
   },
   {
