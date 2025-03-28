@@ -20,7 +20,7 @@ import vmwareJpg from "../../assets/technology/vmware.jpg";
 import vmware2 from "../../assets/technology/vmware2.png";
 import vscode from "../../assets/technology/vscode.png";
 import windowsServer from "../../assets/technology/windows-server.png";
-import kumsa from "../../assets/img/kum-AI.jpg";
+import kumsa from "../../assets/img/images.png";
 
 const About = () => {
   const imgMap = {
@@ -55,49 +55,72 @@ const About = () => {
   return (
     <div className="text-white">
       {/* About Me */}
+
       <div className="py-3">
         <h1 className="py-3 text-4xl text-center underline decoration-yellow-300">
-          about me
+          About Me
         </h1>
         <p className="text-center text-yellow-300">Something about me</p>
+
         <div className=" p-5 grid grid-cols-1 md:grid-cols-2">
-          <div className="p-8  transition-opacity">
-            <img src={kumsa} className="rounded-4xl" />
+          <div className="flex justify-center items-center transition-opacity">
+            <img src={kumsa} className="rounded-4xl h-50 w-120" />
           </div>
+
           <div>
             <p className="p-1 italic pt-5 text-gray-300 text-lg md:text-xl">
               Hi, I'm Kumsa Mergia, a passionate Frontend Developer and IT
-              Infrastructure Engineer with expertise in cloud computing,
-              virtualization, and automation. With experience in computing and
-              cloud administration, I specialize in managing enterprise
-              environments using VMware, Nutanix, IBM virtualization,
-              Kubernetes, Terraform, and Ansible.
-            </p>
-            <p className="p-1 italic pt-5 text-gray-300 text-lg md:text-xl">
-              I hold a BSc in Computer Science from Ambo University and a
-              Diploma in IT from Woliso Polytechnic College. Currently, I live
-              in Addis Ababa, Ethiopia.
-            </p>
+              Infrastructure Engineer...
+              <span id="initialText">
+                As a frontend developer, I craft modern, responsive, and
+                visually appealing web applications using HTML, CSS, JavaScript,
+                React, Tailwind CSS, and Bootstrap. I focus on creating
+                user-friendly interfaces that enhance digital experiences.
+                Currently, I am deepening my knowledge of Azure and Terraform,
+                while balancing my professional work with continuous learning
+                and self-improvement.
+              </span>
+              <span id="moreText" className="hidden">
+                <br />
+                <br />
+                I hold a BSc in Computer Science from Ambo University and a
+                Diploma in IT from Woliso Polytechnic College. Currently, I live
+                in Addis Ababa, Ethiopia.
+                <br />
+                <br />
+                My goal is to leverage technology to build scalable and
+                efficient solutions, whether in cloud infrastructure or
+                front-end development. Outside of work, I enjoy reading,
+                exercising, and meditation, as well as improving my English
+                communication skills to collaborate effectively in global teams.
+                Let's connect and create something amazing!
+              </span>
+              <button
+                id="seeMoreButton"
+                className="text-yellow-300 hover:underline"
+                onClick={() => {
+                  const moreText = document.getElementById("moreText");
+                  const initialText = document.getElementById("initialText");
+                  const button = document.getElementById("seeMoreButton");
 
-            <p className="p-1 italic pt-5 text-gray-300 text-lg md:text-xl">
-              As a frontend developer, I craft modern, responsive, and visually
-              appealing web applications using HTML, CSS, JavaScript, React,
-              Tailwind CSS, and Bootstrap. I focus on creating user-friendly
-              interfaces that enhance digital experiences. Currently, I am
-              deepening my knowledge of Azure and Terraform, while balancing my
-              professional work with continuous learning and self-improvement.
-            </p>
-            <p className="pb-3 italic pt-5 text-gray-300 text-lg md:text-xl">
-              My goal is to leverage technology to build scalable and efficient
-              solutions, whether in cloud infrastructure or front-end
-              development. Outside of work, I enjoy reading, exercising, and
-              meditation, as well as improving my English communication skills
-              to collaborate effectively in global teams. Let's connect and
-              create something amazing!
+                  if (moreText.classList.contains("hidden")) {
+                    moreText.classList.remove("hidden");
+                    button.textContent = "See Less";
+                    initialText.classList.add("hidden");
+                  } else {
+                    moreText.classList.add("hidden");
+                    button.textContent = "See More";
+                    initialText.classList.remove("hidden");
+                  }
+                }}
+              >
+                See More
+              </button>
             </p>
           </div>
         </div>
       </div>
+
       <hr className=" border-b-1 text-yellow-300" />
 
       {/* What can I Offer */}
@@ -112,7 +135,7 @@ const About = () => {
           automation. Here’s how I can add value:
         </p>
         {/* card */}
-        <div className="py-5 flex justify-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-8">
           {/* one */}
           <div className="p-3 bg-custom-gray  rounded-lg shadow-md flex flex-col items-center">
             <p className="text-yellow-200">👨‍💻 Frontend Development</p>
@@ -149,50 +172,27 @@ const About = () => {
               </li>
             </ul>
           </div>
-
         </div>
-        {/* <div className="">
-          <div className="bg-custom-gray  rounded-lg shadow-md flex flex-col items-center">
-          <p className="text-yellow-200">👨‍💻 Frontend Development</p>
-            <ul className="text-gray-300">
-              <li>
-                Building responsive, user-friendly websites with React, Next.js,
-                and modern JavaScript frameworks.
-              </li>
-              <li>
-                Creating interactive UI/UX experiences with Tailwind CSS,
-                Material UI, and CSS animations.
-              </li>
-              <li>
-                Optimizing performance for fast and scalable web applications.
-              </li>
-            </ul>
-
-          </div>
-
-        </div> */}
       </div>
 
       <hr className=" border-b-1 text-yellow-300" />
       {/* Skill & Expertise */}
-      <div className="py-3">
-        <h1 className="py-3 text-2xl text-center underline decoration-white text-yellow-300">
-          technology i use
+      <div className="py-8">
+        <h1 className="text-3xl font-semibold text-center text-yellow-300 mb-6 border-b-2 border-yellow-300 pb-2 w-fit mx-auto">
+          Technology I Use
         </h1>
-        <div className="py-5 flex flex-wrap justify-center gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-center">
           {technologyData.map((item) => (
             <div
               key={item.name}
-              className={`bg-custom-gray rounded-lg shadow-md shadow-black w-35 flex flex-col items-center tech-icon ${
-                iconsVisible ? "visible" : ""
-              }`}
+              className={`bg-gray-800 rounded-xl p-4 shadow-md shadow-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col items-center justify-center`}
             >
               <img
                 src={imgMap[item.image]}
-                className="w-10 h-10 mb-2 p-1"
+                className="w-15 h-15 mb-3 object-contain"
                 alt={item.name}
               />
-              <p className="text-yellow-200">{item.name}</p>
+              <p className="text-yellow-200 text-sm font-medium">{item.name}</p>
             </div>
           ))}
         </div>
