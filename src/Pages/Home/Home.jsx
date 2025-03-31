@@ -40,14 +40,14 @@ const Home = () => {
           <div className="flex gap-2">
           <img src={profile} alt="Profile" className="rounded-full h-15 w-15" />
           <div className="grid">
-            <p className="font-bold">Kumsa Mergia.</p>
+            <p className="font-bold">Kumsa M.</p>
             <p className="text-sm text-amber-200">Front-End | Devops</p>
           </div>
           </div>
           <div className="">
             {" "}
             {/* Adjusted margin for mobile layout */}
-            <button className="bg-yellow-300 hover:bg-black hover:text-yellow-300 font-semibold text-black rounded-md border-2 border-yellow-250 px-6 py-2">
+            <button className="bg-yellow-300 hover:bg-black hover:text-yellow-300 font-semibold text-black rounded-md border-2 border-yellow-250 px-6 py-2 md:hide">
               contact me
             </button>
           </div>
