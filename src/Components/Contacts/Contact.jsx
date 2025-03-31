@@ -102,7 +102,7 @@ const Contact = () => {
             </div>
           </div>
           {/* Right Side (Send Us Message) */}
-          <div className="bg-white rounded-lg shadow-md">
+          <div className="bg-white rounded-lg shadow-md p-2">
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">
               Send Message
             </h3>
