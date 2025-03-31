@@ -11,7 +11,7 @@ const Projects = () => {
     {/* <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">  */}
      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-7'>
 
-     <div class="bg-white rounded-2xl shadow-md p-6 w-full">
+     <div class="bg-white rounded-2xl shadow-md w-full">
       <img src={gemini} alt="Project Two" class="rounded-xl mb-4"/>
         <h2 class="text-xl font-semibold mb-2">Gemini Clone App</h2>
         <p className="text-gray-500">
@@ -23,7 +23,7 @@ const Projects = () => {
         </div>
       </div> 
 
-      <div class="bg-white rounded-2xl shadow-md p-6 w-full">
+      <div class="bg-white rounded-2xl shadow-md w-full">
       <img src={tilik} alt="Project Two" class="rounded-xl mb-4"/>
         <h2 class="text-xl font-semibold mb-2">TilikGym</h2>
         <p className="text-gray-500">

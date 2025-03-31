@@ -62,7 +62,7 @@ const About = () => {
         </h1>
         <p className="text-center text-yellow-300">Something about me</p>
 
-        <div className=" p-5 grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex justify-center items-center transition-opacity">
             <img src={kumsa} className="rounded-4xl h-50 w-120" />
           </div>

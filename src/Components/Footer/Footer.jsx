@@ -36,20 +36,7 @@ const Footer = () => {
             </p>
 
             {/* Social Icons */}
-            {/* <div className="mt-4">
-              <p className="text-white text-lg font-semibold text-center md:text-left">FIND ME ON</p>
-              <div className="flex justify-center md:justify-start gap-6 mt-3">
-                {linkData.map((link) => (
-                  <a key={link.name} href={link.link} target="_blank" rel="noopener noreferrer">
-                    <img
-                      className="h-10 w-10 rounded-full transition-transform transform hover:scale-110"
-                      src={imageMap[link.image]}
-                      alt={link.name}
-                    />
-                  </a>
-                ))}
-              </div>
-            </div> */}
+
           </div>
 
           {/* Center Column (Important Links) */}
