@@ -23,13 +23,13 @@ const Projects = () => {
         </div>
       </div> 
 
-      <div class="bg-white rounded-2xl shadow-md w-full">
+      <div class="bg-white rounded-2xl shadow-md w-full py-1">
       <img src={tilik} alt="Project Two" class="rounded-xl mb-4"/>
         <h2 class="text-xl font-semibold mb-2">TilikGym</h2>
         <p className="text-gray-500">
         TilikGym is a modern and fully responsive gym website built using React.js and Tailwind CSS. It is designed to provide a smooth user experience with fast performance. The project features an interactive UI with animations, ensuring seamless navigation across all devices.   
           </p>
-          <div class="flex justify-center space-x-4">
+          <div class="flex justify-center gap-2 space-x-4">
           <a href="https://github.com/kumsa-Mergia/Gym-Website-with-ReactJS-Tailwind-CSS" class="bg-black hover:bg-yellow-300 text-white font-semibold py-2 px-4 rounded">Github</a>
           <a href="https://tilikgym.netlify.app/" class="bg-blue-500 hover:bg-yellow-300 text-white font-semibold py-2 px-4 rounded">Live Demo</a>
         </div>
