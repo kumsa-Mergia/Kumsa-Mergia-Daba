@@ -9,7 +9,7 @@ const Projects = () => {
   <div class="container mx-auto text-center">
     <h2 class="text-3xl text-yellow-300 font-bold mb-8">Project I Made</h2>
     {/* <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">  */}
-     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-7'>
+     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
 
      <div class="bg-white rounded-2xl shadow-md w-full py-1">
       <img src={gemini} alt="Project Two" class="rounded-xl mb-4"/>
