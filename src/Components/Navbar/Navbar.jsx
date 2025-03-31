@@ -44,7 +44,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="items-center p-4">
+    <nav className="items-center">
       <div className="flex justify-between ">
 
       <div className="flex items-center gap-3 w-full sm:w-auto">
