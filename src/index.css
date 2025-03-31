@@ -4,6 +4,11 @@
   --color-primary: #111111;
 }
 
+*{
+  margin: 0;
+  padding: 0.5;
+}
+
 body {
   font-family: "Poppins", serif;
   background: var(--color-primary);
