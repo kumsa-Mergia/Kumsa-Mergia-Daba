@@ -26,17 +26,17 @@ const Home = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 p-5">
       {/* Left Column */}
       <div className="w-full">
-        <h1 className="text-white text-3xl md:text-4xl font-bold">
+        <h1 className="text-white text-3xl md:text-2xl font-bold">
           {item.title}
         </h1>
         <h2 className="p-1 text-sm text-amber-200">{item.subtitle}</h2>
-        <p className="pt-5 text-gray-300 text-lg md:text-xl">
+        <p className="pt-5 text-gray-300 text-lg md:text-sm">
           {item.description1}
         </p>
         <p className="pt-5 text-gray-300 text-lg md:text-xl">
           {item.description2}
         </p>
-        <div className="p-5 pt-5 flex justify-between text-white">
+        <div className="p-5 pt-5 flex justify-between text-white md:p-3">
           <div className="flex gap-2">
           <img src={profile} alt="Profile" className="rounded-full h-15 w-15" />
           <div className="grid">
