@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     // <div className="py-15 p-5 grid grid-cols-1 md:grid-cols-2">
-    <div className="py-15 p-5 w-full">
+    <div className="py-15  w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 p-5">
       {/* Left Column */}
       <div className="w-full">
